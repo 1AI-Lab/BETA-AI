@@ -2,38 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BETA-AI</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      position: relative;
+      overflow-x: hidden;
+    }
+    .beta-fish {
+      position: fixed;
+      top: 40%;
+      left: -200px;
+      width: 200px;
+      opacity: 0.3;
+      z-index: -1;
+      animation: swim 20s linear infinite;
+    }
+
+    @keyframes swim {
+      0% { left: -200px; transform: scaleX(1); }
+      50% { transform: scaleX(1); }
+      51% { transform: scaleX(-1); }
+      100% { left: 110%; transform: scaleX(-1); }
+    }
+  </style>
 </head>
-<body class="bg-white text-gray-800 font-sans">
-  <header class="bg-blue-100 py-6 shadow-md">
-    <h1 class="text-center text-3xl font-bold text-blue-700">BETA-AI</h1>
-    <p class="text-center text-gray-600">Your Smart AI Dashboard</p>
+<body class="bg-white text-gray-800 flex flex-col min-h-screen">
+
+  <!-- Beta Fish Background -->
+  <img src="https://media.giphy.com/media/cW2GZ1Z36g7xmbxXv7/giphy.gif" alt="Beta Fish" class="beta-fish">
+
+  <!-- Header -->
+  <header class="bg-blue-100 py-8 shadow-sm">
+    <div class="max-w-7xl mx-auto text-center">
+      <h1 class="text-4xl font-bold text-blue-700">BETA-AI</h1>
+      <p class="mt-2 text-gray-600 text-lg">Your Smart AI Dashboard</p>
+    </div>
   </header>
 
-  <main class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
-    <!-- Box 1: News Monitoring -->
-    <section class="bg-blue-50 border border-blue-100 rounded-2xl shadow p-6 hover:shadow-lg transition duration-300">
-      <h2 class="text-xl font-semibold text-blue-700 mb-2">📰 News Monitoring</h2>
-      <p class="text-gray-600">Get real-time updates on trending news powered by AI filtering and analysis.</p>
-    </section>
+  <!-- Main Content -->
+  <main class="flex-grow bg-gray-50 py-12">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
 
-    <!-- Box 2: AI Assistant -->
-    <section class="bg-blue-50 border border-blue-100 rounded-2xl shadow p-6 hover:shadow-lg transition duration-300">
-      <h2 class="text-xl font-semibold text-blue-700 mb-2">🤖 AI Assistant</h2>
-      <p class="text-gray-600">Chat with your smart assistant for answers, support, or quick tasks.</p>
-    </section>
+      <section class="bg-white border border-blue-100 rounded-xl shadow-sm p-6 hover:shadow-md transition duration-300">
+        <div class="flex items-center mb-4">
+          <span class="text-2xl mr-2">📰</span>
+          <h2 class="text-xl font-semibold text-blue-700">News Monitoring</h2>
+        </div>
+        <p class="text-gray-600">Stay updated with AI-curated news feeds, trends, and sentiment analysis from top sources in real time.</p>
+      </section>
 
-    <!-- Box 3: Page Summary -->
-    <section class="bg-blue-50 border border-blue-100 rounded-2xl shadow p-6 hover:shadow-lg transition duration-300">
-      <h2 class="text-xl font-semibold text-blue-700 mb-2">📄 Page Summary</h2>
-      <p class="text-gray-600">Summarize any page you visit using AI-powered context understanding.</p>
-    </section>
+      <section class="bg-white border border-blue-100 rounded-xl shadow-sm p-6 hover:shadow-md transition duration-300">
+        <div class="flex items-center mb-4">
+          <span class="text-2xl mr-2">🤖</span>
+          <h2 class="text-xl font-semibold text-blue-700">AI Assistant</h2>
+        </div>
+        <p class="text-gray-600">Interact with your intelligent assistant for research, task automation, or quick answers powered by advanced AI.</p>
+      </section>
+
+      <section class="bg-white border border-blue-100 rounded-xl shadow-sm p-6 hover:shadow-md transition duration-300">
+        <div class="flex items-center mb-4">
+          <span class="text-2xl mr-2">📄</span>
+          <h2 class="text-xl font-semibold text-blue-700">Page Summary</h2>
+        </div>
+        <p class="text-gray-600">Automatically summarize any web page, document, or report using contextual understanding and natural language processing.</p>
+      </section>
+
+    </div>
   </main>
 
-  <footer class="text-center text-sm text-gray-500 mt-12 mb-4">
+  <!-- Footer -->
+  <footer class="bg-blue-100 text-center text-sm text-gray-600 py-4">
     &copy; 2025 BETA-AI. All rights reserved.
   </footer>
+
 </body>
 </html>
