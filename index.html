@@ -1,18 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BETA-AI</title>
-  <style>
-    body { font-family: sans-serif; background: #fff; margin: 0; }
-    header, footer { background: #cce7ff; text-align: center; padding: 1em; }
-    .box { background: #f0f4f8; margin: 1em; padding: 1em; border-radius: 8px; }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <header><h1>BETA-AI</h1><p>Smart AI Dashboard</p></header>
-  <div class="box"><h2>News Monitoring</h2><p>AI-powered trending news.</p></div>
-  <div class="box"><h2>AI Assistant</h2><p>Chat and support via AI.</p></div>
-  <div class="box"><h2>Page Summary</h2><p>Summarize pages instantly.</p></div>
-  <footer>&copy; 2025 BETA-AI</footer>
+<body class="bg-white text-gray-800 font-sans">
+  <header class="bg-blue-100 py-6 shadow-md">
+    <h1 class="text-center text-3xl font-bold text-blue-700">BETA-AI</h1>
+    <p class="text-center text-gray-600">Your Smart AI Dashboard</p>
+  </header>
+
+  <main class="p-6 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-7xl mx-auto mt-8">
+    <!-- Box 1: News Monitoring -->
+    <section class="bg-blue-50 border border-blue-100 rounded-2xl shadow p-6 hover:shadow-lg transition duration-300">
+      <h2 class="text-xl font-semibold text-blue-700 mb-2">📰 News Monitoring</h2>
+      <p class="text-gray-600">Get real-time updates on trending news powered by AI filtering and analysis.</p>
+    </section>
+
+    <!-- Box 2: AI Assistant -->
+    <section class="bg-blue-50 border border-blue-100 rounded-2xl shadow p-6 hover:shadow-lg transition duration-300">
+      <h2 class="text-xl font-semibold text-blue-700 mb-2">🤖 AI Assistant</h2>
+      <p class="text-gray-600">Chat with your smart assistant for answers, support, or quick tasks.</p>
+    </section>
+
+    <!-- Box 3: Page Summary -->
+    <section class="bg-blue-50 border border-blue-100 rounded-2xl shadow p-6 hover:shadow-lg transition duration-300">
+      <h2 class="text-xl font-semibold text-blue-700 mb-2">📄 Page Summary</h2>
+      <p class="text-gray-600">Summarize any page you visit using AI-powered context understanding.</p>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 mt-12 mb-4">
+    &copy; 2025 BETA-AI. All rights reserved.
+  </footer>
 </body>
 </html>
